@@ -1,0 +1,21 @@
+.logo img{
+    left: 20px; 
+    position: absolute;
+    height: 55px;
+    width: auto;
+}
+
+h1{
+    margin: 0; 
+    text-align: center; 
+    width: 100%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+    background-color: #333; 
+    color: #fff; 
+    padding: 20px;
+    display: flex; 
+    position: relative;
+}
