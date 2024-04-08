@@ -1,0 +1,30 @@
+.center {
+    border: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+header {
+    background-color: #333; 
+    color: #fff; 
+    padding: 20px;
+    display: flex; 
+    position: relative;
+}
+.logo img{
+    left: 20px; 
+    position: absolute;
+}
+
+h1{
+    margin: 0; 
+    text-align: center; 
+    width: 100%;
+}
+
+form {
+    border: 2px solid #e4e7eb; 
+    padding: 20px; 
+    border-radius: 10px;
+}
