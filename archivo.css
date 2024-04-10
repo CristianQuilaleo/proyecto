@@ -1,0 +1,11 @@
+*{
+ 
+}
+
+h1{
+    text-align: center; /* Centra el texto horizontalmente */
+    background-color: rgb(0, 0, 0); /* Establece el color de fondo */
+    color: whitesmoke; /* Establece el col or del texto */
+    padding: 12px; /* Añade espacio interior alrededor del texto */
+}
+
