@@ -40,3 +40,6 @@ td{
     padding: 5px; 
     border-radius: 10px; 
 }
+p{
+    line-height: 100%;
+}
