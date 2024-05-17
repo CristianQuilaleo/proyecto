@@ -8,6 +8,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="Registro.css">
     <title>Registro</title>
+    <script src="registro.js"></script>
 </head>
 
 <body>
@@ -56,40 +57,39 @@
             <form>
                 <div class="col-12">
                     <label for="inputAddress" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="inputAddress" placeholder=" ">
+                    <input type="text" class="form-control" id="nombre" placeholder=" ">
                 </div>
-
+            
                 <div class="col-12">
                     <label for="inputAddress" class="form-label">Apellidos</label>
-                    <input type="text" class="form-control" id="inputAddress" placeholder="">
+                    <input type="text" class="form-control" id="apellidos" placeholder="">
                 </div>
                 <div class="col-md-6">
                     <label for="inputEmail4" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="inputEmail4">
+                    <input type="email" class="form-control" id="email">
                 </div>
                 <div class="col-md-6">
                     <label for="inputPassword4" class="form-label">Contraseña</label>
-                    <input type="password" class="form-control" id="inputPassword4">
+                    <input type="password" class="form-control" id="password">
                 </div>
                 <div class="col-md-6">
-                    <label for="inputPassword4" class="form-label">Confirmacion de contraseña</label>
-                    <input type="password" class="form-control" id="inputPassword4">
+                    <label for="inputPassword4" class="form-label">Confirmación de contraseña</label>
+                    <input type="password" class="form-control" id="confirm_password">
                 </div>
                 <div class="col-12">
-                    <label for="inputAddress2" class="form-label">Direccion</label>
-                    <input type="text" class="form-control" id="inputAddress2"
-                        placeholder="Calle falsa 123">
+                    <label for="inputAddress2" class="form-label">Dirección</label>
+                    <input type="text" class="form-control" id="direccion" placeholder="Calle falsa 123">
                 </div>
                 <div class="col-md-4">
-                    <label for="inputState" class="form-label">Region</label>
-                    <select id="inputState" class="form-select">
-                        <option selected>Elección...</option>
+                    <label for="inputState" class="form-label">Región</label>
+                    <select id="region" class="form-select">
+                        <option selected>Elegir...</option>
                         <option>...</option>
                     </select>
                 </div>
                 <div class="col-md-6">
                     <label for="inputCity" class="form-label">Ciudad</label>
-                    <input type="text" class="form-control" id="inputCity">
+                    <input type="text" class="form-control" id="ciudad">
                 </div>
                 <div class="col-12">
                     <div class="form-check">
@@ -100,9 +100,13 @@
                     </div>
                 </div>
                 <div class="col-12">
-                    <button type="submit" class="btn btn-primary">Crear usuario </button>
+                    <button type="button" class="btn btn-primary" onclick="validarRegistro()">Aceptar</button>
                 </div>
             </form>
+            
+            <!-- Mensaje de registro exitoso -->
+            <div id="mensajeRegistro" style="color: green;"></div>
+            
         </div>
 
         <div class="col-2"></div>
