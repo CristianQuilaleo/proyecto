@@ -8,13 +8,13 @@ function iniciarSesion() {
         return;
     }
 
-    // Verificar si las credenciales coinciden con los datos almacenados
+    // Verificar gmail/pass
     var storedEmail = localStorage.getItem('email');
     var storedPassword = localStorage.getItem('password');
 
     if (email === storedEmail && password === storedPassword) {
         alert('Inicio de sesión exitoso.');
-        // Redirigir al usuario a la página deseada después del inicio de sesión exitoso
+        // Redirige despues del inicio de sesión exitoso
         window.location.href = 'home.html';
     } else {
         document.getElementById('mensajeError').innerText = 'Credenciales incorrectas. Por favor, inténtelo de nuevo.';
