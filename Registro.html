@@ -6,52 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="Registro.css">
+    <link rel="stylesheet" href="archivo.css">
     <title>Registro</title>
+    <script src="registro.js"></script>
 </head>
 
 <body>
-    <!--Barra de navegacion login/registro-->
+      <!--Barra de navegacion login/registro-->
 
-    <div class="row" style="background-color: black;">
+      <div class="row" style="background-color: black;">
         <div class="col"></div>
         <div class="col-2 align-self-center" style="background-color: rgb(73, 73, 73);">
-            <figure class="text-center">
-                <p><a class="navbar-brand" style="color: aliceblue;" href="#">Login | Registrate</a></p>
-            </figure>
+          <div class="d-flex justify-content-around">
+            <a class="navbar-brand" style="color: aliceblue;" href="InicioSesion.html">Login</a>
+            <a class="navbar-brand" style="color: aliceblue;" href="Registro.html">Register</a>
+          </div>
         </div>
-    </div>
-
-    <!--Barra de navegación pag web-->
-    <div class="row " style="background-color: black;">
+      </div>
+    
+      <!--Barra de navegación pag web-->
+      <div class="row " style="background-color: black; justify-content: center;"">
         <div class="col-10">
-            <nav class="navbar navbar-expand-lg " style="background-color: black;">
-                <div class="container-fluid ">
-                    <div class="col"></div>
-                    <div class="col" style="background-color: black;">
-                        <p><a class="navbar-brand" style="color: aliceblue;" href="#">Home</a></p>
-                    </div>
-                    <div class="col" style="background-color: black;">
-                        <p><a class="navbar-brand" style="color: aliceblue;" href="#">Articulos</a></p>
-                    </div>
-                    <div class="col" style="background-color: black;">
-                        <p><a class="navbar-brand" style="color: aliceblue;" href="#">Quienes somos</a></p>
-                    </div>
-                    <div class="col"></div>
-                </div>
-            </nav>
+          <nav class="navbar navbar-expand-lg " style="background-color: black;">
+            <div class="container-fluid ">
+              <div class="col"></div>
+              <div class="col" style="background-color: black;">
+                <p><a class="navbar-brand" style="color: aliceblue;" href="Home.html">Home</a></p>
+              </div>
+              <div class="col" style="background-color: black;">
+                <p><a class="navbar-brand" style="color: aliceblue;" href="BuscaArticulos.html">Articulos</a></p>
+              </div>
+              <div class="col" style="background-color: black;">
+                <p><a class="navbar-brand" style="color: aliceblue;" href="#">Quienes somos</a></p>
+              </div>
+              <div class="col" style="background-color: black;">
+                <p><a class="navbar-brand" style="color: aliceblue;" href="Carrito.html">Carrito</a></p>
+              </div>
+    
+              <div class="col"></div>
+            </div>
+          </nav>
         </div>
-    </div>
-
-    <!--Logo-->
-    <div class="row">
-        <div class="col-4" style="background-color: black;"></div>
-        <div class="col-4" style="background-color: black;">
-            <img src="img/logo_adepac.png" alt="" class="img-fluid">
+      </div>
+    
+      <!--Logo-->
+      <div class="row" style="background-color: black; justify-content: center;">
+        <div class="col-auto">
+          <img id="imgLogo" src="img/logo_adepac.png" alt="Logo de Adepac">
         </div>
-        <div class="col-4" style="background-color: black;"></div>
-    </div>
-
+      </div>
 
     <br>
     <br>
@@ -65,40 +68,39 @@
             <form>
                 <div class="col-12">
                     <label for="inputAddress" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                    <input type="text" class="form-control" id="nombre" placeholder=" ">
                 </div>
-
+            
                 <div class="col-12">
                     <label for="inputAddress" class="form-label">Apellidos</label>
-                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                    <input type="text" class="form-control" id="apellidos" placeholder="">
                 </div>
                 <div class="col-md-6">
                     <label for="inputEmail4" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="inputEmail4">
+                    <input type="email" class="form-control" id="email">
                 </div>
                 <div class="col-md-6">
                     <label for="inputPassword4" class="form-label">Contraseña</label>
-                    <input type="password" class="form-control" id="inputPassword4">
+                    <input type="password" class="form-control" id="password">
                 </div>
                 <div class="col-md-6">
-                    <label for="inputPassword4" class="form-label">Confirmacion de contraseña</label>
-                    <input type="password" class="form-control" id="inputPassword4">
+                    <label for="inputPassword4" class="form-label">Confirmación de contraseña</label>
+                    <input type="password" class="form-control" id="confirm_password">
                 </div>
                 <div class="col-12">
-                    <label for="inputAddress2" class="form-label">Direccion</label>
-                    <input type="text" class="form-control" id="inputAddress2"
-                        placeholder="Apartment, studio, or floor">
+                    <label for="inputAddress2" class="form-label">Dirección</label>
+                    <input type="text" class="form-control" id="direccion" placeholder="Calle falsa 123">
                 </div>
                 <div class="col-md-4">
-                    <label for="inputState" class="form-label">Region</label>
-                    <select id="inputState" class="form-select">
-                        <option selected>Elección...</option>
+                    <label for="inputState" class="form-label">Región</label>
+                    <select id="region" class="form-select">
+                        <option selected>Elegir...</option>
                         <option>...</option>
                     </select>
                 </div>
                 <div class="col-md-6">
                     <label for="inputCity" class="form-label">Ciudad</label>
-                    <input type="text" class="form-control" id="inputCity">
+                    <input type="text" class="form-control" id="ciudad">
                 </div>
                 <div class="col-12">
                     <div class="form-check">
@@ -109,9 +111,13 @@
                     </div>
                 </div>
                 <div class="col-12">
-                    <button type="submit" class="btn btn-primary">Crear usuario </button>
+                    <button type="button" class="btn btn-primary" onclick="validarRegistro()">Aceptar</button>
                 </div>
             </form>
+            
+            <!-- Mensaje de registro exitoso -->
+            <div id="mensajeRegistro" style="color: green;"></div>
+            
         </div>
 
         <div class="col-2"></div>
